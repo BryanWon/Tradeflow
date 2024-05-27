@@ -60,7 +60,7 @@ if (isset($_SESSION['user_id'])) {
     <!-- Logo link container -->
     <div class="logo">
       <a class="navbar-brand " href="/"> <!-- Use mx-auto to center the logo -->
-        <img src="../img/booklogo1.png" alt="Logo" style="max-height: 120px;">
+        <img src="../img/tflogo.png" alt="Logo" style="max-height: 120px;">
       </a>
     </div>
 

@@ -5,7 +5,7 @@
   session_start();
   include "inc/head.inc.php";
 ?>
-  <title>BookHub</title>
+  <title>Tradeflow Capital Management</title>
   <link href="css/Homepagestyle.css" rel="stylesheet">
   <?php
   include "inc/nav.inc.php";
@@ -51,8 +51,7 @@
   
 
     <div class="carousel-caption justify-content-center align-items-center" title="carosel caption">
-      <h1 class="text-light">BookHub</h1>
-      <h2 class="text-light">By Students for Students</h2>
+      <h1 class="text-light">Tradeflow Capital Management</h1>
       <a class="button shop-now" href="product.php">
       Shop Now
      <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
