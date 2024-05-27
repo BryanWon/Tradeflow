@@ -1,0 +1,109 @@
+a {
+    text-decoration: none;
+}
+/* Styles for Search-Bar */
+.search-bar {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; 
+}
+
+.search-bar form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input[type="search"] {
+    background-color: #f3f2f2;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar button.search {
+    padding: 10px 20px;
+    background-color: orange; 
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button.search:hover {
+    background-color:rgb(231, 157, 18); 
+}
+
+.burgermenu i {
+    font-size: 25px;
+}
+
+.account-dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    /* other styling for the dropdown */
+  }
+  
+  .account-dropdown:hover .account-dropdown-content {
+    display: block;
+    /* possibly other styling for the hover effect */
+  }
+  .account-dropdown-content a {
+    display: block; 
+    padding: 10px 15px; 
+    color: black; 
+    text-decoration: none; 
+}
+
+  .account-dropdown-content a:hover {
+    background-color: #f2f2f2; 
+}
+
+/* Styles for nav bar*/
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.bottom-nav.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-bar button.burgermenu {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button.burgermenu:hover {
+    color:rgb(231, 157, 18); 
+}
+
+.cart {
+    display: flex;
+    text-align: center;
+    align-items: center;  
+    justify-content: center;
+}
+
+@media only screen and (max-width: 778px) {
+    .search-bar input[type="search"] {
+        font-size: 12px;
+    }
+
+    .search-bar button.search {
+        font-size: 12px;
+        width: 50%;
+    }
+}

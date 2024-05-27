@@ -1,0 +1,89 @@
+/* Header */
+
+#header {
+    position: relative;
+    background: rgb(12, 11, 11);
+    width: 100%;
+    top: 0;
+      
+}
+    
+
+#header a {
+    color: rgb(245, 239, 239);
+    top: 0;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+
+
+
+
+/* Navigation Bar */
+nav {
+    opacity: 0.6;
+    z-index: -22;
+}
+
+#nav {
+    font-size: 20px;
+}
+
+.container h1 a{
+    font-size: 30px;
+}
+
+
+nav a:hover {
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    /* padding: 0px 0px 0px 0px;  */
+    
+}
+
+/* backgroundpic text */
+
+.midtext h1 {
+    bottom: 450px;
+    
+}
+/* Background Img */
+
+.bgimg img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+
+.row {
+    margin-top: 60px;
+    margin-right: 0;
+    background-image: url(../IMG/redpoly.jpg);
+}
+
+/* Button */
+.btn { 
+    position: relative;
+    max-width: 15%; 
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.map {
+    padding-top: 20px;
+}
+
+/* footer */
+.footer1 {
+    background-color: rgba(29, 27, 27); 
+}
+
+.footer2 {
+    background-color: rgba(29, 27, 27); 
+}
+

@@ -1,0 +1,212 @@
+/* Reset some default styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 5px 0px;
+}
+
+span {
+    margin-left: 10px;  
+}
+
+/* Styles for Header*/
+.nav-item {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.nav-item ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item li {  
+    padding: 0px 10px;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;    
+}
+
+/* Styles for Search-Bar */
+.search-bar {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; 
+}
+
+.search-bar form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input[type="search"] {
+    background-color: #f3f2f2;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: orange; 
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color:darkorange; 
+}
+
+/* Styles for breadcrumb*/
+.breadcrumb {
+    margin-bottom: 20px; 
+}
+
+.breadcrumb ul {
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb ul li {
+    display: inline;
+}
+
+.breadcrumb ul li:not(:last-child):after {
+    content: " > ";
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.breadcrumb ul li a {
+    text-decoration: none;
+    color: #000; /* Adjust link color as needed */
+}
+
+.price {
+    font-size: 24px;
+    color: orangered;
+    margin: 0px;
+}
+
+.quantity-input-container {
+    display: inline-flex;
+    overflow: hidden;
+}
+
+/* Hide the default arrow icons */
+.quantity-input::-webkit-inner-spin-button,
+.quantity-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.quantity-input {
+    /* Optional: You can add additional styling to the input field */
+    padding: 0px 15px;
+    font-size: 16px;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    width: 40px; /* Adjust width as needed */
+}
+
+.quantity-button {
+    /* Optional: You can add additional styling to the buttons */
+    background-color: orange;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.remove-button {
+    width: 100px;
+    background-color: orange;
+    border: none;
+}
+
+.quantity-button:hover, .remove-button:hover {
+    background-color: darkorange;
+}
+
+/* Styles for shopping cart */
+.item-list {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange items vertically */
+}
+
+/* Styles for cart summary */
+.summary-container {
+    margin-top: 0; /* Reset top margin to avoid extra space */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange items vertically */
+}
+
+.summary-border {
+    padding: 10px;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+}
+
+.checkout-button {
+    background-color: orange;
+}
+
+.checkout-button:hover {
+    background-color: darkorange;
+}
+
+.continue-button {
+    background-color: darkgrey;
+}
+
+.continue-button:hover {
+    background-color: grey;
+}
+
+.checkout-button, .continue-button {
+    width: 100%;
+    margin: 5px 0px;
+    color: white;
+    border: none;
+    border-radius: 0;
+}
+
+
+

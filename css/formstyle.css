@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: -webkit-linear-gradient(bottom, #dac083, #7e613a);
+}
+::selection{
+  color: #fff;
+  background: #7e613a;
+}
+.container{
+  width: 330px;
+  background: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 50px 35px 10px 35px;
+}
+.container header{
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.container .form-outer{
+  width: 100%;
+  overflow: hidden;
+}
+.container .form-outer form{
+  display: flex;
+  width: 400%;
+}
+.form-outer form .page{
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+.form-outer form .page .title{
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+.form-outer form .page .field{
+  width: 330px;
+  height: 45px;
+  margin: 45px auto; /*center it automatically*/
+  display: flex;
+  position: relative;
+}
+form .page .field .label{
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+}
+form .page .field input{
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+form .page .field select{
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+form .page .field button{
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: #7e613a;
+  margin-top: -20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+form .page .field button:hover{
+  background: #000;
+}
+form .page .btns button{
+  margin-top: -20px!important;
+}
+form .page .btns button.prev{
+  margin-right: 3px;
+  font-size: 17px;
+}
+form .page .btns button.next{
+  margin-left: 3px;
+}
+.container .progress-bar{
+  display: inline-block;
+  justify-content: space-between;
+  margin: 40px auto;
+  user-select: none;
+  flex-wrap: wrap;
+}
+.container .progress-bar .step{
+  display:inline-block;
+  text-align: center;
+  width: calc(25% - 20px);
+  margin-right: 20px;
+  position: relative;
+}
+/* title above number circle */
+.container .progress-bar .step p{
+  /* display: inline-block;  */
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 8px;
+}
+/* circle that number is inside */
+.progress-bar .step .bullet{
+  /* display: inline-block;  */
+  height: 25px;
+  width: 25px;
+  border: 2px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+}
+/* checked circle */
+.progress-bar .step .bullet.active{
+  border-color: #7e613a;
+  background: #7e613a;
+}
+/* number inside circle */
+.progress-bar .step .bullet span{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-140%);
+    margin-left: 7px;
+}
+
+.progress-bar .step .bullet.active span{
+  display: none;
+}
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after{
+  position: absolute;
+  content: '';
+  bottom: 11px;
+  right: -51px;
+  height: 3px;
+  width: 44px;
+  background: #262626; 
+}
+/* check box becoming active  */
+.progress-bar .step .bullet.active:after{
+  background: #7e613a;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.progress-bar .step:last-child .bullet:before,
+.progress-bar .step:last-child .bullet:after{
+  display: none;
+}
+.progress-bar .step p.active{
+  color: #7e613a;
+  transition: 0.2s linear;
+}
+.progress-bar .step .check{
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+/* tick in check circle */
+.progress-bar .step .check.active{
+  display: block;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+    padding: 30px 15px;
+  }
+  .form-outer form .page .field {
+    width: auto;
+    margin-left: 0;
+    padding: 0 15px;
+  }
+  .form-outer form .page .field input,
+  .form-outer form .page .field select {
+    font-size: 16px;
+  }
+  .form-outer form .page .field .label {
+    font-size: 16px;
+  }
+  .container .progress-bar .step p {
+    font-size: 16px;
+  }
+  .progress-bar .step .bullet {
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    font-size: 14px;
+  }
+}

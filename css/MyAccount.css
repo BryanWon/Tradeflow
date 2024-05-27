@@ -1,0 +1,49 @@
+/* Header */
+
+/* Custom CSS for checkbox outline */
+ .form-check-input[type="checkbox"] {
+     border-color: #4b463e; /* Set the border color to black */
+ }
+
+ .italic {
+  font-style: italic; /* Make the text italic */
+}
+
+
+
+/* Footer */
+.footer {
+   position: fixed;
+   top: 200px;
+   left: 0;
+   width: 100%;
+   background-color: #f8f9fa;
+   padding: 10px 0;
+   text-align: center;
+}
+
+    .input-error {
+      border: 1px solid red;
+    }
+
+    .input-success {
+      border-color: green;
+    }
+
+    .error-message {
+      color: red;
+      display: none;
+      /* Start with it hidden */
+    }
+
+    .error-message1 {
+      color: red;
+      display: block;
+      /* Ensure it's always visible when there's an error */
+      margin-top: 5px;
+    }
+
+    .required-asterisk {
+      color: red;
+    }
+

@@ -1,0 +1,36 @@
+/* Styling for Account Overview section */
+.account-overview {
+    background-color: #f8f9fabe; /* Light gray background */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Add rounded corners */
+    margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+.welcome-heading {
+    margin-bottom: 100px; 
+    /* Add space below headings */
+}
+
+.account-overview h2 {
+    /* font-size: 20px;  */
+    /* Increase heading size */
+    margin-bottom: 10px; /* Add space below headings */
+}
+
+.account-details {
+    margin-bottom: 5px; /* Add space between account details */
+}
+
+/* Styling for Subscription Plan section */
+.subscription-plan {
+    background-color: #f8f9fabe; /* Light gray background */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Add rounded corners */
+    margin-bottom: 20px; /* Add margin at the bottom */
+    font-style: italic; /* Italicize subscription tier */
+}
+
+/* Styling for Delivery Status section */
+.delivery-status {
+    font-weight: bold; /* Make delivery status bold */
+}

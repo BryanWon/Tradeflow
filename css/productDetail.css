@@ -1,0 +1,323 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 5px 0px;
+}
+
+span {
+    margin-left: 10px;  
+}
+
+.product-container {
+    max-width: 80%;
+    margin: 0px auto;
+}
+
+/* Styles for Header*/
+.nav-item {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.nav-item ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item li {  
+    padding: 0px 10px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+/* Styles for breadcrumb*/
+.breadcrumb {
+    margin-bottom: 20px; 
+    background-color: white!important;
+}
+
+.breadcrumb ul {
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb ul li {
+    display: inline;
+}
+
+.breadcrumb ul li:not(:last-child):after {
+    content: " > ";
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.breadcrumb ul li a {
+    text-decoration: none;
+    color: #000; /* Adjust link color as needed */
+}
+
+/* Styles for Items*/
+.image-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.item-details-container {
+    border-bottom: 1px solid lightgrey;
+}
+
+.item-review-container {
+    display: flex;
+    align-items: center;
+}
+
+.item-review-container p{
+    margin: 0;
+    padding: 0;
+}
+
+.price {
+    display: flex;
+    text-align: center;
+    color: orangered;
+    font-size: 40px;
+    padding: 20px 0px;
+}
+
+.button-cart, .button-fav {
+    background-color: orange;
+    width: 30%;
+    border: none;
+}
+
+.product-img {
+    width: 100%;
+}
+
+/* Star Rating*/
+.star-rating {
+    font-size: 20px; 
+    display: flex;
+    justify-content: left;
+}
+  
+.star-rating input[type="radio"] {
+    display: none; 
+}
+  
+.star-rating label {
+    display: inline-block;
+    font-size: 30px; 
+    color: #ccc; 
+    cursor: pointer;
+}
+  
+.star-rating label:before {
+    content: '\2605'; 
+}
+  
+.star-rating input[type="radio"]:checked ~ label {
+    color: gold;
+}
+
+/* Styles for Tabs*/
+.tab {
+    overflow: hidden;
+    margin-bottom: 20px; 
+}
+
+.tablinks {
+    float: left;
+    cursor: pointer;
+    padding: 5px 16px;
+    border: 2px solid transparent; 
+    transition: border-color 0.3s;
+}
+
+.tablinks:hover {
+    border-color: orange; 
+}
+
+.tablinks.active {
+    background-color: orange; 
+    color: white; 
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+}
+
+.tabcontent.active {
+    display: block;
+}
+
+.customer-reviews {
+    padding: 20px;
+}
+
+/* Styles for Overview*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+  
+th {
+    background-color: #f2f2f2;
+}
+  
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+  
+
+/* Styles for Review*/
+.review {
+    padding: 20px;
+    border-top: 1px solid lightgrey;
+}
+
+.item-review-container .star-rating,
+.reviewer-info .star-rating {
+    pointer-events: none;
+}
+
+#reviewForm .star-rating {
+    pointer-events: auto;
+}
+
+/* Override styling for star rating inside item-review-container */
+.item-review-container .star-rating input[type="radio"] {
+    display: none;
+}
+
+.item-review-container .star-rating label:before {
+    content: '\2605'; 
+    color: #ccc;
+}
+
+.item-review-container .star-rating input[type="radio"]:checked ~ label {
+    color: #ccc;
+}
+
+.review-btn {
+    background-color: orange;
+    border: none;
+}
+
+.review-btn:hover {
+    background-color: darkorange;
+    border: none;
+}
+
+#review-feedback {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.review-form-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cancel-button,
+.submit-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cancel-button {
+    background-color: #ccc;
+    margin-right: 10px;
+}
+
+.submit-button {
+    background-color: orange;
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #bbb;
+}
+
+.submit-button:hover {
+    background-color: rgb(231, 157, 18);
+}
+
+.review-date {
+    color: grey;
+}
+
+@media only screen and (max-width: 992px) {
+    .nav-item {
+        padding-top: 5px;
+    }
+    .nav-item span{
+        display: none;
+    }
+
+    .cart span {
+        display: none;
+    }
+
+    .title {
+        justify-content: left;
+    }
+} 
+
+@media only screen and (max-width: 768px) {
+    .nav-item {
+        padding-top: 5px;
+    }
+
+    .nav-item {
+        justify-content: left;
+    }
+} 
+
+@media only screen and (max-width: 576px) {
+    .nav-item {
+        justify-content: left;
+    }
+} 

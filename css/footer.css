@@ -1,0 +1,40 @@
+/* Styles for footer*/
+h1 {
+    font-size: 20px
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer.container {
+    padding: 0px;
+}
+
+.fab {
+  font-size: 40px;
+  padding-right: 10px;
+}
+
+.description, .categories, .informations, .account {
+    font-size: 20px;
+    color: white;
+    margin: 0px 25px;
+    padding: 5px;
+}
+
+.description p, .categories li, .informations li, .account li {
+    font-size: 16px;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border-top: 1px solid white;
+}
+
+.copyright p {
+    margin: 0px;
+}

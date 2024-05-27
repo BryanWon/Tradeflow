@@ -1,0 +1,143 @@
+
+
+
+
+
+/* Body */
+
+.col-sm-9 {
+  max-width: 100%;
+}
+
+.welcome-text {
+  border-bottom: 1px solid #2b2a2a; /* Adjust the color and thickness as needed */
+  padding-bottom: 5px; /* Optional: Adds some space between the text and the border */
+  display: inline-block; /* Make the div behave like an inline element */
+}
+
+
+
+
+body {
+    background-color: rgb(255, 255, 255);
+    padding-top: 40px;
+}
+
+.aboutus {
+    color: brown;
+}
+
+/* Icon Content */
+.iconcontent {
+    padding-top: 50px;
+    font: 30px / 1.1em Montserrat;
+
+}
+
+.hr {
+  border-color: white;
+}
+
+.about {
+  padding-top: 50px;
+  font: 30px / 1.1em Montserrat;
+ 
+}
+
+.bordered-text {
+  display: inline-block;
+  border-bottom: 1px solid #ffffff; /* Adjust the color and thickness as needed */
+  text-align: center;
+
+}
+
+.icondesc1 {
+  padding-top: 30px;
+}
+
+.icondesc1 p{
+  font: 20px / 1.1em Montserrat;
+}
+.icondesc1 h2{
+  font: 25px / 1.1em Montserrat;
+}
+
+.details {
+  text-align: center; /* Center align the content */
+}
+
+.details1 {
+  text-align: center; /* Center align the content */
+}
+
+.details2 {
+  text-align: center; /* Center align the content */
+}
+
+.img1 img {
+  margin-top: 45px; /* Add 10 pixels of padding around the image */
+  border: 2px solid #ccc; /* Add a 2px solid border with a light gray color */
+  border-radius: 50%; /* Use a border radius of 50% to make the image round */
+  padding: 5px; /* Add some padding around the image to create space for the border */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  
+}
+
+
+.img2 img {
+  margin-top: 45px; 
+  border: 2px solid #ccc; 
+  border-radius: 50%; 
+  padding: 5px; 
+  box-sizing: border-box; 
+}
+
+.img3 img {
+  margin-top: 45px; 
+  border: 2px solid #ccc; 
+  border-radius: 50%; 
+  padding: 5px; 
+  box-sizing: border-box; 
+}
+
+/* Header */
+.page_container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+
+.page.heading {
+    font: 35px / 1.1em Montserrat;
+}
+
+.pagecontent {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    font: 20px / 1.1em Montserrat;
+    flex: 1;
+}
+
+
+  /* Responsive adjustments for icon details */
+  .details, .details1, .details2 {
+    margin-bottom: 30px; /* Add some space between icons on smaller screens */
+}
+
+/* Adjust image size on smaller screens */
+@media (max-width: 576px) {
+    .img-fluid {
+        width: 150px;
+        height: auto;
+    }
+}
+
+
+

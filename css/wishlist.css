@@ -1,0 +1,406 @@
+/* Reset some default styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 5px 0px;
+}
+
+span {
+    margin-left: 10px;  
+}
+
+/* .arrow-right {
+    display: none;
+} */
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.product-container {
+    max-width: 80%;
+    margin: 0px auto;
+}
+/* Styles for Header*/
+.nav-item {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.nav-item ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item li {  
+    padding: 0px 10px;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#toggleNav {
+    cursor: pointer;
+}
+
+.nav {
+    display: none; /* Hide the navbar by default */
+}
+
+.navbar-nav {
+    margin-top: 10px; /* Add some space between navbar and search bar */
+}
+
+/* Styles for Search-Bar */
+.search-bar {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; 
+}
+
+.search-bar form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input[type="search"] {
+    background-color: #f3f2f2;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-bar button.search {
+    padding: 10px 20px;
+    background-color: orange; 
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button.search:hover {
+    background-color:rgb(231, 157, 18); 
+}
+
+
+/* Styles for nav bar*/
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.bottom-nav.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-bar button.burgermenu {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button.burgermenu:hover {
+    color:rgb(231, 157, 18); 
+}
+
+.cart {
+    display: flex;
+    text-align: center;
+    align-items: center;  
+    justify-content: center;
+}
+
+/* Styles for breadcrumb*/
+.breadcrumb {
+    margin-bottom: 20px; 
+}
+
+.breadcrumb ul {
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb ul li {
+    display: inline;
+}
+
+.breadcrumb ul li:not(:last-child):after {
+    content: " > ";
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.breadcrumb ul li a {
+    text-decoration: none;
+    color: #000; /* Adjust link color as needed */
+}
+/* Styles for Side bar*/
+.side-bar {
+    border-right: 1px solid lightgrey;
+}
+
+/* Styles for filter bar*/
+.filter-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border: 1px solid lightgrey;
+    height: 60px;
+}
+
+ul.grid-container {
+    display: flex;   
+    margin: 0px;
+}
+
+ul.grid-container li {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    margin: 0px 10px;
+    height: 45px;
+}
+
+ul.grid-container li:hover ,li.active {
+    background-color: black;
+    color: white;
+}
+
+
+.drop-down {
+    padding-left: 10px;
+}
+
+.filter-type {
+    height: 35px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+
+.icon {
+    font-size: 25px;
+}
+
+/* Styles for Items*/
+.item {
+    display: inline-block;
+}
+
+.item-grid img {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.item-description h6, .item-description p {
+    text-decoration: none; 
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+ul.button-container {
+    display: flex;   
+    margin: 0px;
+}
+
+ul.button-container li a{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    margin: 0px 10px;
+    height: 45px;
+    background-color: orange;
+    color: white;
+}
+
+.button-container#list {
+    display: flex;
+    justify-content: left;
+}
+
+.button-cart, .button-fav {
+    background-color: orange;
+    border: none;
+    border-radius: 0px;
+    width: 30%;
+}
+
+.page-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgrey;
+    margin: 5px;
+    height: 50px;
+}
+
+.page-detail {
+    display: flex;
+}
+
+.page-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+span.active {
+    color: black;
+    font-weight: bold;
+}
+
+p.price {
+    font-weight: bold;
+    color: orangered;
+    margin-bottom: 0;
+}
+
+.item-review-container {
+    display: flex;
+    align-items: center;
+}
+
+.item-review-container p{
+    margin: 0;
+    padding: 0;
+}
+
+.item-list {
+    display: none;
+}
+
+/* Star Rating*/
+.star-container {
+    display: flex;
+    justify-content: center;
+}
+
+.img-file {
+    width: 50%;
+}
+
+@media only screen and (max-width: 992px) {
+    .nav-item {
+        padding-top: 5px;
+    }
+    .nav-item span{
+        display: none;
+    }
+
+    .cart span {
+        display: none;
+    }
+
+    .title {
+        justify-content: left;
+    }
+    
+    .side-bar {
+        border: none;
+        order: 2;
+    }
+
+    .main-content {
+        order: 1; /* Change the order for smaller screens */
+    }
+
+} 
+
+@media only screen and (max-width: 768px) {
+    .nav-item {
+        padding-top: 5px;
+    }
+
+    .nav-item {
+        justify-content: left;
+    }
+
+    .side-bar {
+        border: none;
+        order: 2;
+    }
+
+    .main-content {
+        order: 1; /* Change the order for smaller screens */
+    }
+    
+    .page-container {
+        height: 80px;
+    }
+
+    .page-container div{
+        align-items: center;
+        justify-content: center;
+        padding: 8px 0px;
+    }
+
+    .page-detail {
+        border-bottom: 1px solid lightgrey;
+    }
+} 
+
+@media only screen and (max-width: 576px) {
+    .nav-item {
+        justify-content: left;
+    }
+
+
+    .side-bar {
+        border: none;
+        order: 2;
+    }
+
+    .main-content {
+        order: 1; /* Change the order for smaller screens */
+    }
+
+    
+} 
