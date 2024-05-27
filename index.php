@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <?php
-  session_start();
   include "inc/head.inc.php";
 ?>
   <title>Tradeflow Capital Management</title>
@@ -67,36 +66,36 @@
     <div id="bodytext">
       <div class="row">
         <div class="col-md-4 col-sm-6 col-xs">
-          <h1 class="Topics text-dark">Today's Deals</h1>
+          <h1 class="Topics text-dark">Lorem Ipsum</h1>
           <div class="details">
 
-            <p>Discover exclusive deals and discounts<br>on a wide range of books, updated daily.</p>
+            <p>Lorem Ipsum</p>
             <div class="img1">
-              <a href="product.php?deal_category=top_deal"><img src="../img/cats.jpg" class="img-fluid" alt="responsive image"></a>
+              <a href="product.php?deal_category=top_deal"><img src="../img/satimg1.jpg" class="img-fluid" alt="responsive image"></a>
             </div>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 col-xs">
-          <h1 class="Topics text-dark">Top Sellers</h1>
+          <h1 class="Topics text-dark">Lorem Ipsum</h1>
           <div class="details">
 
-            <p>Explore the books that are flying off the shelves<br>and find out what everyone's reading.</p>
+            <p>Lorem Ipsum</p>
           </div>
           <div class="img1">
-            <a href="product.php?deal_category=top_seller"><img src="../img/topsell.jpg" class="img-fluid" alt="responsive image"></a>
+            <a href="product.php?deal_category=top_seller"><img src="../img/satimg1.jpg" class="img-fluid" alt="responsive image"></a>
           </div>
 
         </div>
 
 
         <div class="col-md-4 col-sm-6 col-xs">
-          <h1 class="Topics text-dark">Most Viewed Books</h1>
+          <h1 class="Topics text-dark">Lorem Ipsum</h1>
           <div class="details">
 
-            <p>See what's capturing the interest of our readers<br>with our most viewed books list.</p>
+            <p>Lorem Ipsum</p>
 
             <div class="img1">
-              <a href="product.php?deal_category=most_viewed"><img src="../img/most.jpg" class="img-fluid" alt="responsive image"></a>
+              <a href="product.php?deal_category=most_viewed"><img src="../img/satimg2.png" class="img-fluid" alt="responsive image"></a>
 
             </div>
           </div>

@@ -1,28 +1,3 @@
-<?php
-// Start or resume a session
-session_start();
-
-// Check if the user is logged in and retrieve user information if so
-$userFirstName = ''; // Initialize an empty string for the user's first name
-if (isset($_SESSION['user_id'])) {
-    // Assume $_SESSION['user_id'] contains the user's ID
-    // Connect to the database to retrieve user information
-    require 'lib/connection.php'; // Ensure you include your database connection here
-    
-    // Prepare a SQL statement to fetch the user's first name
-    $stmt = $conn->prepare("SELECT f_name FROM project.users WHERE id = ?");
-    $stmt->bind_param("i", $_SESSION['user_id']);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    if ($result->num_rows > 0) {
-        $row = $result->fetch_assoc();
-        $userFirstName = $row['f_name']; // Assign the user's first name to the variable
-    }
-    $stmt->close();
-}
-?>
-
-
 <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white" id="banner">
   <div class="container-fluid d-flex flex-column">
       <!-- Your nav structure -->
@@ -31,30 +6,6 @@ if (isset($_SESSION['user_id'])) {
               <!-- Placeholder for other content(top left) or empty -->
             </div>
             <nav class="col-sm-12 col-md-6 nav-item">
-                <ul>
-                    <?php if (!empty($_SESSION['user_id']) && !empty($_SESSION['user_first_name'])): ?>
-                          <li class="account-dropdown">
-                            <a href="#"><i class="fa fa-user"></i><span><?php echo htmlspecialchars($userFirstName); ?></span></a>
-                            <div class="account-dropdown-content">
-                                <a href="user_dashboard.php">Dashboard</a>
-                                <a href="#" onclick="confirmLogout()">Logout</a>
-                            </div>
-                          </li>
-                          <li><a href="wishlist.php"><i class="fa fa-heart"></i><span>Wishlist</span></a></li>
-                          <li><a href="/cart.php"><i class="fa fa-shopping-cart"></i><span>My Cart</span></a></li>
-                        <?php else: ?>
-                          <li class="account-dropdown">
-                            <a href="#"><i class="fa fa-user"></i><span>Account</span></a>
-                            <div class="account-dropdown-content">
-                                <a href="newform.php">Register</a>
-                                <a href="newlogin.php">Login</a>
-                            </div>
-                          </li>
-                          <li><a href="newlogin.php"><i class="fa fa-heart"></i><span>Wishlist</span></a></li>
-                          <li><a href="newlogin.php"><i class="fa fa-shopping-cart"></i><span>My Cart</span></a></li>
-                        <?php endif; ?>
-                <!-- <li><a href="#">SGD&nbsp;<i class="fa fa-chevron-down"></i></a></li> -->
-                </ul>
         </nav>
     </div>
     <!-- Logo link container -->
@@ -75,16 +26,16 @@ if (isset($_SESSION['user_id'])) {
               <a class="nav-link font-weight-bold" href="index.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link font-weight-bold" href="AboutUs.php">About Us</a>
+              <a class="nav-link font-weight-bold" href="#">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link font-weight-bold" href="product.php">Catalog</a>
+              <a class="nav-link font-weight-bold" href="#">Our Team</a>
             </li>
             <li class="nav-item">
               <a class="nav-link font-weight-bold" href="ContactUs.php">Contact Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link font-weight-bold" href="subinfo.php">Join Us!</a>
+              <a class="nav-link font-weight-bold" href="#">Join Us!</a>
             </li>
           </ul>
       </div>

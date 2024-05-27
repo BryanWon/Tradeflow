@@ -1,17 +1,4 @@
-<?php
-// Start or resume a session
-session_start();
-$isLoggedIn = isset($_SESSION['user_id']); // true if logged in, false otherwise
 
-// Check if the user is logged in and retrieve user's first name
-if ($isLoggedIn) {
-    // Assuming you have stored the user's first name in the session data
-    $userFirstName = isset($_SESSION['user_first_name']) ? $_SESSION['user_first_name'] : '';
-} else {
-    // If the user is not logged in, set a default value for $userFirstName
-    $userFirstName = 'Account';
-}
-?>
 
 <header>
     <div class="row nav-container">

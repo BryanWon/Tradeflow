@@ -1,97 +1,3 @@
-<?php
-
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
-use PHPMailer\PHPMailer\PHPMailer;
-require 'vendor/autoload.php'; 
-
-include'lib/connection.php';
-
-$confirmationMessage = '';
-$errorMessage = '';
-$emailSentSuccessfully = false;  // Define the variable and set it to false by default
-
-if (isset($_POST['contact'])) {
-
-    $salutations = $_POST['salutations'] ?? 'Valued Customer';
-    $name = $_POST['name'] ?? 'No name given';
-    $email = $_POST['email'] ?? 'no-reply@example.com';
-    $message = $_POST['message'] ?? 'No message provided';
-
-               $mail = new PHPMailer(true);
-               
-               try {
-                 //Server settings
-                 $mail->isSMTP();
-                 $mail->Host       = 'smtp.gmail.com';
-                 $mail->SMTPAuth   = true;
-                 $mail->Username   = 'bbernicecyq@gmail.com';
-                 $mail->Password   = 'oaon jitu rcew nxec';
-                 $mail->SMTPSecure = 'tls';
-                 $mail->Port       = 587;
-                 $mail->SMTPDebug = 0;
-  
-                 //Recipients
-                 $mail->setFrom('bbernicecyq@gmail.com', 'BookHub');
-                 $mail->addAddress($email); // Add the user's email address
-  
-                 // Content
-                 // $mail->isHTML(true);
-                 $mail->Subject = "Contact Form Submission from $name";
-                 $fullMessage = "Hello $salutations $name,<br><br>Thanks for contacting us. We'll get back to you as soon as possible.";
-                 $mail->Body = $fullMessage;
-                 $mail->AltBody = strip_tags(str_replace("<br>", "\r\n", $fullMessage));
-             
-                 $mail->send();
-         
-                 // Confirmation message to be displayed on the webpage
-                 $confirmationMessage = "Thanks for contacting us. We'll get back to you as soon as possible.";
-                 $emailSentSuccessfully = true;  
-                } catch (Exception $e) {
-                 $messages[] = "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-               }
-           } else {
-            $messages[] = "No form submission detected.";
-           }
-
-// Display the confirmation or error message after the form
-if ($confirmationMessage !== '') {
-    echo "<p class='confirmation-message'>{$confirmationMessage}</p>";
-}
-if ($errorMessage !== '') {
-    echo "<p class='error-message'>{$errorMessage}</p>";
-}
-
-// After your validation and email sending logic
-if ($emailSentSuccessfully) {
-
-    // Prepare an insert statement
-    $stmt = $conn->prepare("INSERT INTO contact_submissions (salutation, name, email, message) VALUES (?, ?, ?, ?)");
-
-    // Bind variables to the prepared statement as parameters
-    $stmt->bind_param("ssss", $salutations, $name, $email, $message);
-
-    // Attempt to execute the prepared statement
-    if ($stmt->execute()) {
-        // Record was successfully saved
-        echo "Record saved successfully.";
-    } else {
-        // There was an error saving the record
-        echo "Error: " . $stmt->error;
-    }
-
-    // Close statement
-    $stmt->close();
-}
-
-// Close connection
-$conn->close();
-
-    
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -115,17 +21,7 @@ $conn->close();
                     <h2>We'd Love to Hear From You</h2>
                 </div>
 
-                <!-- Confirmation or error messages -->
-<?php if ($confirmationMessage): ?>
-    <div class="alert alert-success" role="alert">
-        <?php echo $confirmationMessage; ?>
-    </div>
-<?php endif; ?>
-<?php if ($errorMessage): ?>
-    <div class="alert alert-danger" role="alert">
-        <?php echo $errorMessage; ?>
-    </div>
-<?php endif; ?>
+
 
                 <form action="ContactUs.php" method="post">
                     <div class="mb-3" style="padding-top: 30px;">
@@ -167,7 +63,7 @@ $conn->close();
                     <div class="row">
                         <div class="details col-md-6">
                             <h2>Contact Details</h2>
-                            <p><i class="fas fa-envelope"></i> BookHub@gmail.com</p>
+                            <p><i class="fas fa-envelope"></i> Lorem Ipsum</p>
                             <p><i class="fas fa-map-marker-alt"></i> Company Address: Singapore Institute of Technology (SIT@NYP)</p>
                             <p><i class="fas fa-phone"></i> 172 Ang Mo Kio Ave 8, Singapore 567739</p>
                             <p><i class="fas fa-phone"></i> Call Us at: (+65) 6726 8488</p>
