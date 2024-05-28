@@ -27,13 +27,13 @@
    <!-- The slideshow -->
 <div class="carousel-inner">
   <div class="carousel-item active" title="carousel pictures">
-    <img src="../img/bookimg.jpg" alt="bookopened" class="fixed-size-img">
+    <img src="../img/satimg1.jpg" alt="bookopened" class="fixed-size-img">
   </div>
   <div class="carousel-item">
-    <img src="../img/bookshelf.jpg" alt="Bookshelf" class="fixed-size-img">
+    <img src="../img/satimg1.jpg" alt="Bookshelf" class="fixed-size-img">
   </div>
   <div class="carousel-item">
-    <img src="../img/bshelf.jpg" alt="colouredbooks" class="fixed-size-img">
+    <img src="../img/satimg1.jpg" alt="colouredbooks" class="fixed-size-img">
   </div>
 </div>
 
