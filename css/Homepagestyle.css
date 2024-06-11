@@ -1,187 +1,185 @@
 /* Header */
-
 #header {
-    position: relative;
-    background: rgb(12, 11, 11);
-    width: 100%;
-    top: 0;
-      
+  position: relative;
+  background: rgb(12, 11, 11);
+  width: 100%;
+  top: 0;
+  z-index: 1;
 }
-    
 
 #header a {
-    color: rgb(245, 239, 239);
-    top: 0;
+  color: rgb(245, 239, 239);
+  top: 0;
 }
 
-
-
 .container-fluid {
-    padding-left: 0px;
-    padding-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .carousel-control-prev, .carousel-control-next {
-    z-index: 10;
-    top: 25%; /* Position the arrows vertically at 50% from the top */
+  z-index: 10;
+  top: 25%;
 }
-
-   
-
 
 /* Button */
-
-
 .button {
-    position: relative;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-    padding-block: 0.5rem;
-    padding-inline: 1.25rem;
-    background-color: rgb(245 245 220);
-    border-radius: 9999px;
-    align-items: center;
-    justify-content: center;
-    color: #ffff;
-    gap: 10px;
-    font-weight: bold;
-    border: 3px solid #ffffff4d;
-    outline: none;
-    overflow: hidden;
-    font-size: 15px;
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block; 
-    margin-top: 30px;
-  }
-
-  .button.shop-now {
-    color: #000000; 
-    font-size: 20px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color: rgb(245 245 220);
+  border-radius: 9999px;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 30px;
+  z-index: 2;
 }
 
-  
-  .icon {
-    width: 24px;
-    height: 24px;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .button:hover {
-    transform: scale(1.05);
-    border-color: #fff9;
-  }
-  
-  .button:hover .icon {
-    transform: translate(4px);
-  }
-  
-  .button:hover::before {
-    animation: shine 1.5s ease-out infinite;
-  }
-  
-  .button::before {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 100%;
-    background-image: linear-gradient(
-      120deg,
-      rgba(255, 255, 255, 0) 30%,
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0) 70%
-    );
-    top: 0;
+.button.shop-now {
+  color: #000000;
+  font-size: 20px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.button:hover .icon {
+  transform: translate(4px);
+}
+
+.button:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
     left: -100px;
-    opacity: 0.6;
   }
-  
-  @keyframes shine {
-    0% {
-      left: -100px;
-    }
-  
-    60% {
-      left: 100%;
-    }
-  
-    to {
-      left: 100%;
-    }
+  60% {
+    left: 100%;
   }
-  
+  to {
+    left: 100%;
+  }
+}
 
 .custom-width-btn {
-    width: 150px; /* Adjust the width as needed */
-    background-color: #f0f0f0;
-    border-radius: 20px;
-    font-size: 20px;
+  width: 150px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  font-size: 20px;
 }
 
-
-
-
-
 .carousel-caption {
-    top: 350px;
-    bottom: 0;
-    left: 20%;
-    right: 20%;
-    display: block;
-    align-items: center;
-    text-align: center;
-  }
+  top: 350px;
+  bottom: 0;
+  left: 20%;
+  right: 20%;
+  display: block;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
 
 /* carousel img */
 .fixed-size-img {
-    width: 1800px; /* Set the width to your desired fixed width */
-    height: 800px; /* Set the height to your desired fixed height */
-    object-fit: fill; /* Optional: Maintain aspect ratio and cover container */
-  }
-  
+  width: 100%;
+  height: 800px; /* Adjust to maintain the height */
+  object-fit: cover;
+}
 
 .carousel-container {
-    max-width: 80%;
-    margin: 0 auto;
-    margin-top: 150px;
-    padding-bottom: 20px;
+  max-width: 100%; /* Ensure full width for carousel */
+  margin: 0 auto;
+  margin-top: 50px; /* Adjust margin for spacing */
+  padding-bottom: 20px;
+  z-index: 1;
 }
 
 /* Carousel Text */
 .carousel-caption h1 {
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    font-size: 40px;
-  }
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
 
-  .carousel-caption h4 {
-    font-family: Arial, sans-serif;
-  }
+.carousel-caption h4 {
+  font-family: Arial, sans-serif;
+}
 
-/* resize img */
-.img1 img{
-    height: 15em    ;
+.container {
+  max-width: 100%;
 }
 
 /* bodytext */
 #bodytext {
-    text-align: center;
-    padding-bottom: 10em;
-    background-color: rgb(255, 255, 255);
-    padding-top: 30px;
+  text-align: center;
+  font-family: serif;
+  padding-bottom: 10em;
+  background-color: rgb(255, 255, 255);
+  padding-top: 30px;
+  position: relative;
+  z-index: 1;
+  margin-top: 50px;
 }
 
-
+.Topics {
+  font-size: 26px;
+  font-weight: bold;
+  color: black;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Show ellipsis if text overflows */
+}
 
 .details {
- color: rgb(101, 101, 101);
- font-size: 18px;
+  color: rgb(101, 101, 101);
+  font-size: 22px;
+  margin-top: 20px; /* Space above details text */
+  margin-bottom: 20px; /* Space below details text */
+  text-align: center; /* Center the text */
 }
 
-
-
-.row {
-margin-right: 0;
- }
-
+.img1 {
+  margin-top: 20px; /* Space above the image */
+  margin-bottom: 20px; /* Space below the image */
+  margin-left: 100px; /* Space to the left of the image */
+  margin-right: 100px; /* Space to the right of the image */
+}
