@@ -1,5 +1,5 @@
 
-<link rel="shortcut icon" type="image/x-icon"  href="../img/favicon.png">
+<link rel="shortcut icon" type="image/x-icon"  href="../img/favicon.jpg">
 <meta charset="utf-8">
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
