@@ -6,6 +6,13 @@
                 <!-- Placeholder for other content(top left) or empty -->
             </div>
             <nav class="col-sm-12 col-md-6 nav-item">
+            <li class="account-dropdown">
+                            <a href="#"><i class="fa fa-user"></i><span>Account</span></a>
+                            <div class="account-dropdown-content">
+                                <a href="LoginRegister.php">Register</a>
+                                <a href="LoginRegister.php">Login</a>
+                            </div>
+                </li>
         </nav>
     </div>
     <!-- Logo link container -->
