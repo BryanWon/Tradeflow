@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light fixed-top bg-white" id="banner">
+<nav class="navbar navbar-expand-md navbar-light fixed-top custom-navbar" id="banner">
   <div class="container-fluid d-flex flex-column">
       <!-- Your nav structure -->
       <div class="row nav-container">
@@ -11,7 +11,7 @@
     <!-- Logo link container -->
     <div class="logo">
       <a class="navbar-brand " href="/"> <!-- Use mx-auto to center the logo -->
-        <img src="../img/tflogo.png" alt="Logo" style="max-height: 120px;">
+        <img src="../img/tflogo.png" alt="Logo" style="max-height: 100px;">
       </a>
     </div>
 

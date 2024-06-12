@@ -4,39 +4,40 @@
     z-index: 2;
     background-color: white;
     /* other styling for the dropdown */
-  }
+}
   
-  .account-dropdown:hover .account-dropdown-content {
+.account-dropdown:hover .account-dropdown-content {
     display: block;
     /* possibly other styling for the hover effect */
-  }
-  .account-dropdown-content a {
+}
+  
+.account-dropdown-content a {
     display: block; /* This will ensure each link is displayed on a new line */
     padding: 10px 15px; /* Add padding for better spacing and appearance */
     color: black; /* Set the text color for the dropdown links */
     text-decoration: none; /* Remove underlines from links */
 }
 
-  .account-dropdown-content a:hover {
+.account-dropdown-content a:hover {
     background-color: #f2f2f2; /* Optional: Change background on hover for better interaction feedback */
 }
 
-  /* Styles for Header*/
+/* Styles for Header */
 span {
-  margin-left: 10px;  
+    margin-left: 10px;  
 }
 
 .nav-container {
-  width: 80%;
+    width: 80%;
 }
 
-.nav-container a{
-  text-decoration: none;
-  color: black;
+.nav-container a {
+    text-decoration: none;
+    color: black;
 }
 
-.nav-container a:hover{
-  color: orange;
+.nav-container a:hover {
+    color: orange;
 }
 
 .nav-item {
@@ -62,7 +63,6 @@ span {
 .title {
     display: flex;
     justify-content: center;
-    
 }
 
 .hidden-navbar {
@@ -70,30 +70,37 @@ span {
     transition: transform 0.4s ease-in-out;
 }
 
-
 /* Navigation Bar */
-
 .logo-cart-container {
     margin-top: 5px; /* Adjust spacing from top */
     margin-bottom: 15px; /* Adjust spacing from bottom */
     display: flex;
     width: 80%;
-  }
+}
 
-  .nav-link.font-weight-bold {
+.nav-link.font-weight-bold {
     font-size: 20px; /* Adjust the font size as needed */
-  }
+}
 
-  .logo-cart-container img {
-    padding-left:125px;
-  }
+.logo-cart-container img {
+    padding-left: 125px;
+}
 
-  .bottom-container .nav-item {
-    font-size: 20px;
-  }
-
-  /* Style for the other links (Adjust spacing between links */
-  .navbar-nav .nav-item {
+/* Style for the other links (Adjust spacing between links */
+.navbar-nav .nav-item {
     margin-left: 15px; 
-  }
-  
+}
+
+.custom-navbar {
+    background-color: #21345b;
+}
+
+/* New styles for navbar link text colors */
+.custom-navbar .nav-link {
+    color: #ffffff !important; /* Change to your desired text color */
+}
+
+.custom-navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #ffa500 !important; /* Change to your desired hover text color */
+  text-decoration: underline; /* Add underline on hover */
+}

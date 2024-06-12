@@ -46,7 +46,7 @@
       <span class="sr-only">Next</span>
     </a>
 
-    <div class="carousel-caption justify-content-center align-items-center" title="carosel caption">
+    <div class="carousel-caption justify-content-center align-items-center" title="carousel caption">
       <h1 class="text-light">Tradeflow Capital Management</h1>
       <a class="button shop-now" href="product.php">
       Sign Up Here
