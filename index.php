@@ -14,7 +14,8 @@
 <body>
 <main>
 <div class="carousel-container">
-  <div id="demo" class="carousel slide fixed-controls-carousel" data-ride="carousel" data-interval="1500">
+  <div id="demo" class="carousel slide carousel-fade fixed-controls-carousel" data-ride="carousel" data-interval="5000">
+  
 
     <!-- Indicators -->
     <ul class="carousel-indicators">
@@ -26,13 +27,22 @@
     <!-- The slideshow -->
     <div class="carousel-inner">
       <div class="carousel-item active" title="carousel pictures">
-        <img src="../img/satimg1.jpg" alt="bookopened" class="fixed-size-img">
+      <video class="fixed-size-img ship1-img" autoplay loop muted>
+          <source src="../img/shipv1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
       <div class="carousel-item">
-        <img src="../img/satimg1.jpg" alt="Bookshelf" class="fixed-size-img">
+      <video class="fixed-size-img ship1-img" autoplay loop muted>
+          <source src="../img/shipv2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
       <div class="carousel-item">
-        <img src="../img/satimg1.jpg" alt="colouredbooks" class="fixed-size-img">
+      <video class="fixed-size-img ship1-img" autoplay loop muted>
+          <source src="../img/shipv3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
 
@@ -46,7 +56,7 @@
       <span class="sr-only">Next</span>
     </a>
 
-    <div class="carousel-caption justify-content-center align-items-center" title="carousel caption">
+    <div class="carousel-caption justify-content-center align-items-center" title="carousel image">
       <h1 class="text-light">Tradeflow Capital Management</h1>
       <a class="button shop-now" href="LoginRegister.php">
       Sign Up Here
