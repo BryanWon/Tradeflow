@@ -95,7 +95,7 @@
     <div class="row justify-content-center">
       <div class="col-md-4 col-sm-6 text-center">
         <div class="img1">
-          <a href="product.php?deal_category=top_deal"><img src="../img/satimg1.jpg" class="img-fluid fixed-height-img" alt="responsive image"></a>
+          <a href="product.php?deal_category=top_deal"><img src="../img/ship1.jpg" class="img-fluid fixed-height-img" alt="responsive image"></a>
         </div>
       </div>
       <div class="col-md-4 col-sm-6 text-center">

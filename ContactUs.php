@@ -64,14 +64,13 @@
                         <div class="details col-md-6">
                             <h2>Contact Details</h2>
                             <p><i class="fas fa-envelope"></i> Lorem Ipsum</p>
-                            <p><i class="fas fa-map-marker-alt"></i> Company Address: Singapore Institute of Technology (SIT@NYP)</p>
-                            <p><i class="fas fa-phone"></i> 172 Ang Mo Kio Ave 8, Singapore 567739</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Tradeflow Capital Management</p>
+                            <p><i class="fas fa-phone"></i> 10 Marina Blvd, #08-05 TradeFlow Capital Management Pte Ltd, MBFC Tower 2, Singapore 018983</p>
                             <p><i class="fas fa-phone"></i> Call Us at: (+65) 6726 8488</p>
                         </div>
                         <div class="col-md-6">
                             <!-- Google Maps Location -->
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15954.661612111953!2d103.848787!3d1.3774334!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da16e96db0a1ab%3A0x3d0be54fbbd6e1cd!2sSingapore%20Institute%20of%20Technology%20(SIT%40NYP)!5e0!3m2!1sen!2ssg!4v1711699270111!5m2!1sen!2ssg" width="525" height="450" style="border:0;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade" title="Google Maps"></iframe>
-                        </div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.293981865108!2d103.8541591!3d1.2795092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80798a5e124e0743%3A0xf29bb9f079f7aba4!2sTradeflow%20Capital%20Management%20Pte%20Ltd!5e0!3m2!1sen!2ssg!4v1719460302377!5m2!1sen!2ssg" width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        </div>
                     </div>
                 </div>
                 
