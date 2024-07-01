@@ -227,11 +227,7 @@ body {
   color: black; /* Change text color to black on hover */
 }
 
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+
 
 .title {
   color: rgb(0, 0, 0);
@@ -260,6 +256,8 @@ body {
   font-size: 35px;
   margin-bottom: 50px;
   color: white;
+  padding-bottom: 6px;
+  border-bottom: 4px solid white;
 }
 
 .team-title, .column-container {

@@ -42,7 +42,7 @@
   </div>
   <div class="empty-box"></div>
   <div class="row-container"> 
-    <h1 class="team-title"><b>Take a look at our team!</b></h1>
+    <h1 class="team-title"><b>Our Team</b></h1>
     <div class="column-container">
       <div class="column">
         <div class="card">
