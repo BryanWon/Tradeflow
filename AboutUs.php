@@ -10,9 +10,9 @@
     <img src="img/ship1.jpg" alt="Construction" class="background-image">
     <div class="content">
       <div class="left-section">
-        <h1>About Tradeflow Capital Management</h1>
+        <h1><b>About Tradeflow Capital Management</b></h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lectus erat consectetur eu sapien eget, rhoncus consectetur sem.</p>
-        <a href="#" class="button">View Our Work</a>
+        <a href="#" class="button1">View Our Work</a>
       </div>
       <div class="right-section">
         <h2>What We Do</h2>
@@ -41,9 +41,47 @@
     </div>
   </div>
 
-  <div class="text-container"> 
-    <p><b>Take a look at our team!</b></p>
+  <div class="row-container"> 
+  <p><b>Take a look at our team!</b></p>
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+      <div class="container center-text">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
   </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+      <div class="container center-text">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+      <div class="container center-text">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
 <script src="js/aboutus.js"></script>
 </body>
 <?php include "inc/footer.inc.php"; ?>
