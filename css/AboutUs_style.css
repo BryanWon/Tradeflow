@@ -215,3 +215,7 @@ body {
 .button:hover {
   background-color: #555;
 }
+
+.row-container h1 {
+  font-size: 35px;
+}

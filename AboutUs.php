@@ -42,7 +42,7 @@
   </div>
 
   <div class="row-container"> 
-  <p><b>Take a look at our team!</b></p>
+  <h1><b>Take a look at our team!</b></h1>
   <div class="column">
     <div class="card">
       <img src="/img/manesh.png" alt="Jane" style="width:100%">
