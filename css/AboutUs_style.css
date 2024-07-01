@@ -53,6 +53,10 @@ body {
 }
 
 /* Left section styling */
+.left-section {
+  padding-left: 80px;
+}
+
 .left-section h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
@@ -131,7 +135,7 @@ body {
 
 /* Right section styling */
 .right-section {
-  margin-left: 50px;
+  margin-left: 70px;
   min-width: 0; /* Ensure sections don't overflow */
 }
 
