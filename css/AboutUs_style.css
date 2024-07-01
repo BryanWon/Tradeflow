@@ -1,3 +1,4 @@
+/* General body styling */
 body {
   font-family: Arial, sans-serif;
   display: flex;
@@ -5,6 +6,7 @@ body {
   min-height: 100vh; /* Ensure the body takes at least the full viewport height */
 }
 
+/* Image container styling */
 .image-container {
   position: relative;
   width: 100%;
@@ -33,6 +35,7 @@ body {
   z-index: 0; /* Position the image below the tint */
 }
 
+/* Content styling */
 .content {
   position: relative;
   z-index: 2; /* Position the content above the tint */
@@ -49,6 +52,7 @@ body {
   min-width: 0; /* Ensure sections don't overflow */
 }
 
+/* Left section styling */
 .left-section h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
@@ -59,9 +63,7 @@ body {
   margin-bottom: 20px;
 }
 
-
-
-
+/* Button1 styling */
 .button1 {
   background-color: #f0a500;
   color: white;
@@ -75,7 +77,6 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  font-weight: bold;
   border: 3px solid #ffffff4d;
   outline: none;
   overflow: hidden;
@@ -89,7 +90,7 @@ body {
 .button1:hover {
   transform: scale(1.05);
   border-color: #fff9;
-  color: black;
+  color: black; /* Change text color to black on hover */
 }
 
 .button1:hover .icon {
@@ -128,7 +129,7 @@ body {
   }
 }
 
-
+/* Right section styling */
 .right-section {
   margin-left: 50px;
   min-width: 0; /* Ensure sections don't overflow */
@@ -162,15 +163,33 @@ body {
   color: #ddd;
 }
 
+/* Row container styling */
 .row-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  margin: 20px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/ship4.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  position: relative;
+  z-index: 0;
+}
+
+.column-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .column {
-  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 33.3%;
-  margin-bottom: 16px;
   padding: 0 8px;
 }
 
@@ -181,13 +200,31 @@ body {
   }
 }
 
+/* Card styling */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%; /* Reduce the width of the card */
+  max-width: 400px; /* Set a maximum width for the card */
+}
+
+.card img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
 }
 
 .container {
   padding: 0 16px;
-  align-items: center;
+  text-align: center;
+}
+
+.center-text:hover {
+  color: black; /* Change text color to black on hover */
 }
 
 .container::after, .row::after {
@@ -197,9 +234,10 @@ body {
 }
 
 .title {
-  color: grey;
+  color: rgb(0, 0, 0);
 }
 
+/* General button styling */
 .button {
   border: none;
   outline: 0;
@@ -214,8 +252,22 @@ body {
 
 .button:hover {
   background-color: #555;
+  color: black; /* Change text color to black on hover */
 }
 
-.row-container h1 {
+/* Title styling */
+.team-title {
   font-size: 35px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.team-title, .column-container {
+  position: relative;
+  z-index: 1;
+}
+
+
+.empty-box {
+  height: 75px;
 }

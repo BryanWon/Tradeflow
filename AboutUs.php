@@ -15,7 +15,7 @@
         <a href="#" class="button1">View Our Work</a>
       </div>
       <div class="right-section">
-        <h2>What We Do</h2>
+        <h2><b>What We Do</b></h2>
         <div class="service">
           <i class="fa fa-database service-icon" aria-hidden="true"></i>
           <div class="service-description">
@@ -40,48 +40,50 @@
       </div>
     </div>
   </div>
-
+  <div class="empty-box"></div>
   <div class="row-container"> 
-  <h1><b>Take a look at our team!</b></h1>
-  <div class="column">
-    <div class="card">
-      <img src="/img/manesh.png" alt="Jane" style="width:100%">
-      <div class="container center-text">
-        <h2>Jane Doe</h2>
-        <p class="title">CEO & Founder</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="button">Contact</button></p>
+    <h1 class="team-title"><b>Take a look at our team!</b></h1>
+    <div class="column-container">
+      <div class="column">
+        <div class="card">
+          <img src="/img/manesh.png" alt="Team">
+          <div class="container center-text">
+            <h2>Manesh Jones</h2>
+            <p class="title">CEO & Founder</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>example@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <div class="column">
-    <div class="card">
-      <img src="/img/manesh.png" alt="Mike" style="width:100%">
-      <div class="container center-text">
-        <h2>Mike Ross</h2>
-        <p class="title">Art Director</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="button">Contact</button></p>
+      <div class="column">
+        <div class="card">
+          <img src="/img/manesh.png" alt="Team">
+          <div class="container center-text">
+            <h2>Lorem ipsum</h2>
+            <p class="title">Art Director</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>example@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="/img/manesh.png" alt="Team">
+          <div class="container center-text">
+            <h2>Lorem ipsum</h2>
+            <p class="title">Designer</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>example@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  
-  <div class="column">
-    <div class="card">
-      <img src="/img/manesh.png" alt="John" style="width:100%">
-      <div class="container center-text">
-        <h2>John Doe</h2>
-        <p class="title">Designer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-</div>
 <script src="js/aboutus.js"></script>
 </body>
 <?php include "inc/footer.inc.php"; ?>

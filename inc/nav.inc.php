@@ -36,7 +36,7 @@
                     <a class="nav-link font-weight-bold" href="AboutUs.php">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link font-weight-bold" href="Globe\globe\globe.php">Our Team</a>
+                    <a class="nav-link font-weight-bold" href="Globe\globe\globe.php">Globe</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link font-weight-bold" href="ContactUs.php">Contact Us</a>
