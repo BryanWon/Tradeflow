@@ -187,6 +187,7 @@ body {
 
 .container {
   padding: 0 16px;
+  align-items: center;
 }
 
 .container::after, .row::after {
