@@ -64,8 +64,8 @@
                         <div class="details col-md-6">
                             <h2>Contact Details</h2>
                             <p><i class="fas fa-envelope"></i> Lorem Ipsum</p>
-                            <p><i class="fas fa-map-marker-alt"></i> Tradeflow Capital Management</p>
-                            <p><i class="fas fa-phone"></i> 10 Marina Blvd, #08-05 TradeFlow Capital Management Pte Ltd, MBFC Tower 2, Singapore 018983</p>
+                            <p><i class="fas fa-address-book"></i> Tradeflow Capital Management</p>
+                            <p><i class="fas fa-map-marker-alt"></i> 10 Marina Blvd, #08-05 TradeFlow Capital Management Pte Ltd, MBFC Tower 2, Singapore 018983</p>
                             <p><i class="fas fa-phone"></i> Call Us at: (+65) 6726 8488</p>
                         </div>
                         <div class="col-md-6">

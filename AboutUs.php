@@ -40,7 +40,15 @@
       </div>
     </div>
   </div>
-  <div class="empty-box"></div>
+  <div class="arrow_container">
+    <a href="#toscroll">
+  <div class="chevron"></div>
+  <div class="chevron"></div>
+  <div class="chevron"></div>
+  <span class="text">Scroll down</span>
+    </a>
+</div>
+<div id="toscroll">
   <div class="row-container"> 
     <h1 class="team-title"><b>Our Team</b></h1>
     <div class="column-container">
@@ -84,6 +92,8 @@
       </div>
     </div>
   </div>
+</div>
+
 <script src="js/aboutus.js"></script>
 </body>
 <?php include "inc/footer.inc.php"; ?>

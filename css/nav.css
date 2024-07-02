@@ -1,9 +1,17 @@
+.account-dropdown a i.fa-user {
+    padding-right: 10px; /* Adjust the padding values as needed */
+    color: white;
+}
+
+.account-dropdown a span {
+    color: #ffffff; /* Replace with your desired color */
+}
+
 .account-dropdown-content {
     display: none;
     position: absolute;
     z-index: 2;
     background-color: white;
-    /* other styling for the dropdown */
 }
   
 .account-dropdown:hover .account-dropdown-content {
