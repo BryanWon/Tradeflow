@@ -1,10 +1,3 @@
-/* General body styling */
-body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Ensure the body takes at least the full viewport height */
-}
 
 /* Image container styling */
 .image-container {
@@ -270,7 +263,7 @@ body {
 }
 
 
-
+/* Scroll Arrow */
 .arrow_container {
   position: relative;
   width: 100%;
@@ -289,8 +282,13 @@ body {
   height: 12px;
   opacity: 0;
   transform: scale3d(0.5, 0.5, 0.5);
-  animation: move 3s ease-out infinite;
+  animation: move 4s ease-out infinite;
   background-color: #000;
+  top: 10px;
+}
+
+.middle-chevron {
+  transform: scale3d(0.0, 0.5, 0.0);
 }
 
 .chevron:before,
@@ -327,7 +325,7 @@ body {
   margin-left: -30px;
   padding-bottom: 50px;
   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   color: #000000;
   text-transform: uppercase;
   white-space: nowrap;

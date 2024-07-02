@@ -5,7 +5,7 @@
      
       <!-- Social Media Icons-->
       <div class="col mt-3 mb-3">
-        <i class="far fa-envelope"></i> &nbsp;&nbsp;<a href="mailto:someone@example.com" class="text-white">Email Us at "Email"</a>
+        <i class="far fa-envelope"></i> &nbsp;&nbsp;<a href="mailto:someone@example.com" class="text-white">Email Us at example@example.com</a>
         <p class="text-white">Follow Us @ </p>
         <i class="fab fa-instagram socialMedia"></i>
         <i class="fab fa-facebook-square socialMedia"></i>

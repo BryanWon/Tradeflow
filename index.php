@@ -6,12 +6,13 @@
 ?>
   <title>Tradeflow Capital Management</title>
   <link href="css/Homepagestyle.css" rel="stylesheet">
-  <?php
-  include "inc/nav.inc.php";
-  ?> 
 </head>
 
+
 <body>
+<?php
+  include "inc/nav.inc.php";
+  ?> 
 <main>
 <div class="carousel-container">
   <div id="demo" class="carousel slide carousel-fade fixed-controls-carousel" data-ride="carousel" data-interval="5000">

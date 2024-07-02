@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <?php include "inc/headaboutusinc.php";?>
+<?php 
+  include "inc/headaboutusinc.php";
+?>
   <title>Tradeflow Capital Management</title>
-  <?php include "inc/nav.inc.php"; ?>
+  
 </head>
+
+
 <body>
+  <?php 
+  include "inc/nav.inc.php"; 
+  ?>
   <div class="image-container">
     <img src="img/ship1.jpg" alt="Construction" class="background-image">
     <div class="content">
       <div class="left-section">
         <h1><b>About Tradeflow Capital Management</b></h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lectus erat consectetur eu sapien eget, rhoncus consectetur sem.</p>
-        <a href="#" class="button1">View Our Work</a>
+        <a href="Whatwedo.php" class="button1">View Our Work</a>
       </div>
       <div class="right-section">
         <h2><b>What We Do</b></h2>
@@ -67,7 +74,7 @@
 
       <div class="column">
         <div class="card">
-          <img src="/img/manesh.png" alt="Team">
+          <img src="/img/Rifat.jpg" alt="Team">
           <div class="container center-text">
             <h2>Lorem ipsum</h2>
             <p class="title">Art Director</p>
