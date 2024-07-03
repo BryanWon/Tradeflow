@@ -13,71 +13,48 @@
   ?>
      <div class="container">
         <div class="image-section">
-            <img src="image.png" alt="House in the woods">
+            <img src="img/ship1.jpg" alt="Image">
         </div>
         <div class="text-section">
-            <h1>Built for the Thinkers</h1>
-            <p>
-                Crafting leather takes time. It's not something most people ponder. I certainly didn't, a decade ago, when I first set foot in Mexico. For millennia, once an animal takes its leave, the hide embarks on its second journey. On this particular day, these hides have been seasoned and loaded onto a truck en route to the tannery. This is how I find myself on a loading dock in a cloud of flies unloading dead animal skins in late 2009 – the beginning of WP Standard.
-            </p>
-            <p>
-                But let me backtrack a bit. Following a series of unsuccessful career attempts, I made the choice to launch a business specializing in crafting leather guitar straps. And so, in late 2009, I found myself on a loading dock, surrounded by a swarm of flies, unloading the skins of deceased animals – the inception of WP Standard.
-            </p>
+            <div class="inner-text-section">
+                <h1>Real-Time Tracking</h1>
+                <p>
+                Provide live updates on port schedules and cargo statuses. Our advanced tracking system offers continuous monitoring of your shipments, 
+                allowing you to view their exact locations and expected arrival times.</p>
+                <p>With real-time data, you can make informed decisions, quickly respond to any changes or delays, 
+                and ensure the smooth flow of goods from origin to destination. Stay ahead with precise tracking and never lose sight of your cargo again.</p>
+            </div>
         </div>
     </div>
-  <div class="arrow_container">
-    <a href="#toscroll">
-  <div class="chevron"></div>
-  <div class="chevron"></div>
-  <div class="chevron"></div>
-  <span class="text">Scroll down</span>
-    </a>
-</div>
-<div id="toscroll">
-  <div class="row-container"> 
-    <h1 class="team-title"><b>Our Team</b></h1>
-    <div class="column-container">
-      <div class="column">
-        <div class="card">
-          <img src="/img/manesh.png" alt="Team">
-          <div class="container center-text">
-            <h2>Manesh Jones</h2>
-            <p class="title">CEO & Founder</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>example@example.com</p>
-            <p><button class="button">Contact</button></p>
-          </div>
+    <div class="container1">
+    <div class="text-section">
+        <div class="inner-text-section">
+            <h1>Predictive Scheduling</h1>
+            <p>
+            Offer predictions on arrival and departure times based on historical data and current conditions. Our predictive scheduling tool utilizes advanced algorithms and machine learning to analyze past and present data, providing you with the most accurate and up-to-date schedules.            </p>
+            <p>
+            This allows you to anticipate delays, optimize your logistics operations, and improve overall efficiency. By foreseeing potential disruptions, you can proactively manage your supply chain and ensure timely deliveries.            </p>
         </div>
-      </div>
-
-      <div class="column">
-        <div class="card">
-          <img src="/img/Rifat.jpg" alt="Team">
-          <div class="container center-text">
-            <h2>Lorem ipsum</h2>
-            <p class="title">Art Director</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>example@example.com</p>
-            <p><button class="button">Contact</button></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="card">
-          <img src="/img/manesh.png" alt="Team">
-          <div class="container center-text">
-            <h2>Lorem ipsum</h2>
-            <p class="title">Designer</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>example@example.com</p>
-            <p><button class="button">Contact</button></p>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
+        <div class="image-section">
+            <img src="img/ship1.jpg" alt="Image">
+        </div>
+    </div>
+    <div class="container2">
+        <div class="image-section">
+            <img src="img/ship1.jpg" alt="Image">
+        </div>
+        <div class="text-section">
+            <div class="inner-text-section">
+                <h1>Analytics and Reporting</h1>
+                <p>
+                Provide detailed reports and analytics on port operations, cargo movements, and delivery performance. 
+                Our comprehensive analytics platform delivers in-depth insights into your logistics processes.</p>
+                <p>From tracking key performance indicators to identifying trends and bottlenecks, our reports empower you to make data-driven decisions. 
+                    With customizable dashboards and real-time data visualization, you can monitor performance, enhance operational efficiency, and achieve better outcomes for your business.</p>
+            </div>
+        </div>
+    </div>
 
 <script src="js/aboutus.js"></script>
 </body>

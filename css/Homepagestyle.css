@@ -197,6 +197,7 @@
   margin-top: 20px; /* Space above details text */
   margin-bottom: 20px; /* Space below details text */
   text-align: center; /* Center the text */
+  height: 80px;
 }
 
 .img1 {
@@ -209,4 +210,31 @@
 .fixed-height-img {
   height: 200px;
   width: 425px;
+}
+
+/* Media Queries for Small Devices */
+@media (max-width: 768px) {
+  .row.justify-content-center.text-image-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  .fixed-height-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .Topics {
+    font-size: 22px;
+  }
+
+  .details {
+    font-size: 18px;
+  }
 }
