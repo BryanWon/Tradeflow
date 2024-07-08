@@ -39,6 +39,9 @@
                     <a class="nav-link font-weight-bold" href="Globe\globe\globe.php">Globe</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="test.php">Test</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link font-weight-bold" href="ContactUs.php">Contact Us</a>
                 </li>
                 <li class="nav-item">
